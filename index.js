@@ -3,6 +3,8 @@ const mysql = require('mysql2');
 const cors = require('cors');
 const bcrypt = require('bcrypt');  // for password hashing
 require('dotenv').config();
+const multer = require('multer');
+const upload = multer({ storage: multer.memoryStorage() });
 
 const app = express();
 app.use(express.json());
@@ -93,7 +95,44 @@ app.post('/login', (req, res) => {
   });
 });
 
+app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
+  const { age, bio } = req.body;
+  const profile_picture = req.file ? req.file.buffer : null;
+  const userId = req.params.id;
+
+ console.log("Received age:", age);
+  console.log("Received bio:", bio);
+  console.log("Received file:", req.file);
+
+  const sqlUpdateUser = `UPDATE User SET age = ?, bio = ?, profile_picture = ? WHERE user_id = ?`;
+  db.query(sqlUpdateUser, [age, bio, profile_picture, userId], (err, result) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ message: 'Error updating user' });
+    }
+
+    // Now fetch the updated user
+    const sqlGetUser = `SELECT user_id, username, email, name, surname, age, bio, profile_picture, role, is_admin FROM User WHERE user_id = ?`;
+    db.query(sqlGetUser, [userId], (err, results) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ message: 'Database error' });
+      }
+      if (results.length === 0) {
+        return res.status(404).json({ message: 'User not found after update' });
+      }
+      res.json({ message: 'Profile updated successfully', updatedUser: results[0] });
+    });
+  });
+});
+
+
+
 const port = 4200;
-app.listen(port, () => {
+app.get('/', (req, res) => {
+  res.send('Hello, your backend is alive!');
+});
+
+app.listen(port,'0.0.0.0', () => {
   console.log(`Server running at: ${port}`);
 });
