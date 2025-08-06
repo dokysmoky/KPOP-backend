@@ -126,6 +126,21 @@ app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
   });
 });
 
+app.post('/listings', upload.single('photo'), (req, res) => {
+  const { user_id, listing_name, description, condition, price } = req.body;
+  const photo = req.file ? req.file.buffer : null;
+
+  const sql = `INSERT INTO Listing (user_id, listing_name, description, \`condition\`, price, photo)
+             VALUES (?, ?, ?, ?, ?, ?)`;
+
+db.query(sql, [user_id, listing_name, description, condition, price, photo], (err, results) => {
+  if (err) {
+    console.error(err);
+    return res.status(500).json({ message: 'Error creating listing' });
+  }
+  res.status(201).json({ message: 'Listing created successfully', listingId: results.insertId });
+});});
+
 
 
 const port = 4200;
