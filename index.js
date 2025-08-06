@@ -130,16 +130,33 @@ app.post('/listings', upload.single('photo'), (req, res) => {
   const { user_id, listing_name, description, condition, price } = req.body;
   const photo = req.file ? req.file.buffer : null;
 
-  const sql = `INSERT INTO Listing (user_id, listing_name, description, \`condition\`, price, photo)
-             VALUES (?, ?, ?, ?, ?, ?)`;
-
-db.query(sql, [user_id, listing_name, description, condition, price, photo], (err, results) => {
-  if (err) {
-    console.error(err);
-    return res.status(500).json({ message: 'Error creating listing' });
+  if (!user_id) {
+    return res.status(401).json({ message: 'Unauthorized: Missing user ID' });
   }
-  res.status(201).json({ message: 'Listing created successfully', listingId: results.insertId });
-});});
+
+  // Check if user exists
+  db.query('SELECT user_id FROM User WHERE user_id = ?', [user_id], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+
+    if (results.length === 0) {
+      return res.status(401).json({ message: 'Unauthorized: Invalid user' });
+    }
+
+    const sql = `INSERT INTO Listing (user_id, listing_name, description, \`condition\`, price, photo)
+                 VALUES (?, ?, ?, ?, ?, ?)`;
+
+    db.query(sql, [user_id, listing_name, description, condition, price, photo], (err, results) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ message: 'Error creating listing' });
+      }
+      res.status(201).json({ message: 'Listing created successfully', listingId: results.insertId });
+    });
+  });
+});
 
 app.get('/listings', (req, res) => {
   const sql = `SELECT product_id AS id, listing_name AS title, description, price, \`condition\`, photo FROM Listing`;
