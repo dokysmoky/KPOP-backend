@@ -141,6 +141,24 @@ db.query(sql, [user_id, listing_name, description, condition, price, photo], (er
   res.status(201).json({ message: 'Listing created successfully', listingId: results.insertId });
 });});
 
+app.get('/listings', (req, res) => {
+  const sql = `SELECT product_id AS id, listing_name AS title, description, price, \`condition\`, photo FROM Listing`;
+
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error('Error fetching listings:', err);
+      return res.status(500).json({ message: 'Error fetching listings' });
+    }
+
+    // Convert photo from buffer to base64
+    const listings = results.map(listing => ({
+      ...listing,
+      photo: listing.photo ? `data:image/jpeg;base64,${listing.photo.toString('base64')}` : null
+    }));
+
+    res.json({ listings });
+  });
+});
 
 
 const port = 4200;
