@@ -375,5 +375,42 @@ app.post('/comments', authenticateToken, (req, res) => {
   });
 });
 
+// Delete a comment (authenticated)
+app.delete('/comments/:comment_id', authenticateToken, (req, res) => {
+  const commentId = req.params.comment_id;
+  const userId = req.user.id;
+
+  // First, check if the comment exists and who owns it
+  const selectSql = 'SELECT user_id FROM Comment WHERE comment_id = ?';
+  db.query(selectSql, [commentId], (err, results) => {
+    if (err) {
+      console.error('Error fetching comment:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    if (results.length === 0) {
+      return res.status(404).json({ message: 'Comment not found' });
+    }
+
+    const commentOwnerId = results[0].user_id;
+
+    // Allow delete if user owns comment or is admin
+    // Assume you have is_admin flag on req.user; if not, adjust accordingly
+    if (commentOwnerId !== userId && !req.user.is_admin) {
+      return res.status(403).json({ message: 'Not authorized to delete this comment' });
+    }
+
+    // Delete comment
+    const deleteSql = 'DELETE FROM Comment WHERE comment_id = ?';
+    db.query(deleteSql, [commentId], (deleteErr, deleteResult) => {
+      if (deleteErr) {
+        console.error('Error deleting comment:', deleteErr);
+        return res.status(500).json({ message: 'Database error deleting comment' });
+      }
+      res.json({ message: 'Comment deleted successfully' });
+    });
+  });
+});
+
+
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
