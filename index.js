@@ -6,11 +6,14 @@ const multer = require('multer');
 const upload = multer({ storage: multer.memoryStorage() });
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
+
 const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key_here'; 
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // For form data (multer, etc.)
 
 const db = mysql.createConnection({
   host: 'localhost',
@@ -21,7 +24,10 @@ const db = mysql.createConnection({
 });
 
 db.connect(err => {
-  if (err) throw err;
+  if (err) {
+    console.error('MySQL connection error:', err);
+    process.exit(1);
+  }
   console.log('Connected to MySQL');
 });
 
@@ -34,27 +40,29 @@ app.post('/register', async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const sql = `INSERT INTO User 
+    const sql = `
+      INSERT INTO User 
       (username, password, email, name, surname, age, bio, profile_picture, role, is_admin) 
-      VALUES (?, ?, ?, ?, ?, NULL, NULL, NULL, 'user', 0)`;
+      VALUES (?, ?, ?, ?, ?, NULL, NULL, NULL, 'user', 0)
+    `;
 
     db.query(sql, [username, hashedPassword, email, name, surname], (err, result) => {
       if (err) {
         if (err.code === 'ER_DUP_ENTRY') {
           return res.status(409).json({ message: 'Username or email already exists' });
         }
-        console.error(err);
+        console.error('Register error:', err);
         return res.status(500).json({ message: 'Database error' });
       }
-      res.status(201).json({ message: 'User registered' });
+      return res.status(201).json({ message: 'User registered' });
     });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server error' });
+    console.error('Register server error:', error);
+    return res.status(500).json({ message: 'Server error' });
   }
 });
 
-// Login endpoint with profile_picture excluded from response
+// Login endpoint
 app.post('/login', (req, res) => {
   console.log('Login request received:', req.body);
   const { username, password } = req.body;
@@ -72,59 +80,64 @@ app.post('/login', (req, res) => {
       return res.status(500).json({ message: 'Database error' });
     }
 
-    console.log('DB query results:', results);
-
     if (results.length === 0) {
       console.log(`User with username "${username}" not found`);
       return res.status(401).json({ message: 'Invalid username or password' });
     }
 
     const user = results[0];
-    console.log('User record found:', { id: user.user_id, username: user.username, passwordHash: user.password });
-bcrypt.compare(password, user.password)
-  .then(match => {
-    if (!match) {
-      return res.status(401).json({ message: 'Invalid username or password' });
-    }
+    bcrypt.compare(password, user.password)
+      .then(match => {
+        if (!match) {
+          return res.status(401).json({ message: 'Invalid username or password' });
+        }
 
-    const safeUser = {
-      id: user.user_id,
-      username: user.username,
-      name: user.name,
-      surname: user.surname,
-      email: user.email,
-      age: user.age,
-      bio: user.bio,
-      role: user.role,
-      is_admin: user.is_admin
-    };
+        const safeUser = {
+          id: user.user_id,
+          username: user.username,
+          name: user.name,
+          surname: user.surname,
+          email: user.email,
+          age: user.age,
+          bio: user.bio,
+          role: user.role,
+          is_admin: user.is_admin
+        };
 
-    // Generate JWT token
-    const token = jwt.sign({ id: user.user_id, username: user.username }, JWT_SECRET, { expiresIn: '1d' });
+        const token = jwt.sign(
+          { id: user.user_id, username: user.username },
+          JWT_SECRET,
+          { expiresIn: '1d' }
+        );
 
-    return res.json({ user: safeUser, token });
-  })
-  .catch(error => {
-    console.error('Error comparing passwords:', error);
-    return res.status(500).json({ message: 'Server error' });
-  });
+        return res.json({ user: safeUser, token });
+      })
+      .catch(error => {
+        console.error('Error comparing passwords:', error);
+        return res.status(500).json({ message: 'Server error' });
+      });
   });
 });
 
-// Get user profile by ID (optional)
+// Get user profile by ID
 app.get('/profile/:id', (req, res) => {
   const userId = req.params.id;
   db.query('SELECT * FROM User WHERE user_id = ?', [userId], (err, results) => {
-    if (err) return res.status(500).json({ message: 'Database error' });
-    if (results.length === 0) return res.status(404).json({ message: 'User not found' });
+    if (err) {
+      console.error('Error fetching profile:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    if (results.length === 0) {
+      return res.status(404).json({ message: 'User not found' });
+    }
 
     const user = results[0];
     delete user.password;
-    res.json(user);
+    return res.json(user);
   });
 });
 
-// Update profile endpoint (with optional profile picture upload)
+// Update profile with optional profile_picture upload
 app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
   const userId = req.params.id;
   let { age, bio } = req.body;
@@ -147,8 +160,8 @@ app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
     if (error) {
       console.error('Error updating profile:', error);
       return res.status(500).json({ message: 'Error updating profile', error });
-    } 
-    // Return updated user info to frontend
+    }
+    // Return updated user info
     db.query('SELECT * FROM User WHERE user_id = ?', [userId], (err, rows) => {
       if (err) {
         console.error('Error fetching updated user:', err);
@@ -156,17 +169,21 @@ app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
       }
       const updatedUser = rows[0];
       delete updatedUser.password;
-      // Remove profile_picture or handle separately if needed
-      res.json(updatedUser);
+      // You may also decide to omit profile_picture here or send a separate URL
+      return res.json(updatedUser);
     });
   });
 });
 
-// New endpoint to serve profile pictures as images
+// Serve profile pictures as images
 app.get('/profile-picture/:id', (req, res) => {
   const userId = req.params.id;
   db.query('SELECT profile_picture FROM User WHERE user_id = ?', [userId], (err, results) => {
-    if (err || results.length === 0 || !results[0].profile_picture) {
+    if (err) {
+      console.error('Error fetching profile picture:', err);
+      return res.status(500).send('Server error');
+    }
+    if (results.length === 0 || !results[0].profile_picture) {
       return res.status(404).send('No image');
     }
     const img = results[0].profile_picture;
@@ -174,9 +191,11 @@ app.get('/profile-picture/:id', (req, res) => {
       'Content-Type': 'image/jpeg',
       'Content-Length': img.length
     });
-    res.end(img);
+    return res.end(img);
   });
 });
+
+// Get all listings with photo as base64 data URL
 app.get('/listings', (req, res) => {
   const sql = 'SELECT * FROM Listing';
 
@@ -186,7 +205,6 @@ app.get('/listings', (req, res) => {
       return res.status(500).json({ message: 'Database error' });
     }
 
-    // Convert photo buffer to base64 string
     const listingsWithPhotos = results.map(listing => {
       let photo = null;
       if (listing.photo) {
@@ -195,9 +213,76 @@ app.get('/listings', (req, res) => {
       return { ...listing, photo };
     });
 
-    res.json({ listings: listingsWithPhotos });
+    return res.json({ listings: listingsWithPhotos });
   });
 });
+
+// Add a listing to wishlist
+app.post('/wishlist', (req, res) => {
+  const { user_id, product_id } = req.body;
+  if (!user_id || !product_id) {
+    return res.status(400).json({ message: 'Missing user_id or product_id' });
+  }
+
+  const sql = 'INSERT INTO Wishlist (user_id, product_id) VALUES (?, ?)';
+  db.query(sql, [user_id, product_id], (err, result) => {
+    if (err) {
+      if (err.code === 'ER_DUP_ENTRY') {
+        return res.status(409).json({ message: 'Already in wishlist' });
+      }
+      console.error('Error adding to wishlist:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    return res.status(201).json({ message: 'Added to wishlist' });
+  });
+});
+
+// Remove a listing from wishlist
+app.delete('/wishlist', (req, res) => {
+  const { user_id, product_id } = req.body;
+  if (!user_id || !product_id) {
+    return res.status(400).json({ message: 'Missing user_id or product_id' });
+  }
+
+  const sql = 'DELETE FROM Wishlist WHERE user_id = ? AND product_id = ?';
+  db.query(sql, [user_id, product_id], (err, result) => {
+    if (err) {
+      console.error('Error removing from wishlist:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: 'Not found in wishlist' });
+    }
+    return res.json({ message: 'Removed from wishlist' });
+  });
+});
+
+// Get wishlist for user
+app.get('/wishlist/:user_id', (req, res) => {
+  const userId = req.params.user_id;
+  const sql = `
+    SELECT L.* FROM Listing L
+    JOIN Wishlist W ON L.product_id = W.product_id
+    WHERE W.user_id = ?`;
+
+  db.query(sql, [userId], (err, results) => {
+    if (err) {
+      console.error('Error fetching wishlist:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+
+    const listingsWithPhotos = results.map(listing => {
+      let photo = null;
+      if (listing.photo) {
+        photo = `data:image/jpeg;base64,${Buffer.from(listing.photo).toString('base64')}`;
+      }
+      return { ...listing, photo };
+    });
+
+    return res.json({ wishlist: listingsWithPhotos });
+  });
+});
+
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
