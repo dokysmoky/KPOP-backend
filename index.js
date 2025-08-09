@@ -603,6 +603,79 @@ app.delete('/cart/remove/:cartItemId', authenticateToken, (req, res) => {
   });
 });
 
+// Example shipping cost fixed or calculated
+const SHIPPING_COST = 5;
+
+app.post('/order/checkout', authenticateToken, (req, res) => {
+  const userId = req.user.id;
+  const { address, payment_method } = req.body;
+
+  if (!address || !payment_method) {
+    return res.status(400).json({ message: 'Address and payment method are required' });
+  }
+
+  // Fetch cart items for the user
+  const getCartSql = `
+    SELECT CI.quantity, L.price
+    FROM Cart_Item CI
+    JOIN Cart C ON CI.cart_id = C.cart_id
+    JOIN Listing L ON CI.product_id = L.product_id
+    WHERE C.user_id = ?
+  `;
+
+  db.query(getCartSql, [userId], (err, items) => {
+    if (err) {
+      console.error('Error fetching cart items:', err);
+      return res.status(500).json({ message: 'Database error fetching cart items' });
+    }
+
+    if (items.length === 0) {
+      return res.status(400).json({ message: 'Cart is empty' });
+    }
+
+    // Calculate total order amount (items + shipping)
+    let itemsTotal = 0;
+    items.forEach(item => {
+      itemsTotal += item.price * item.quantity;
+    });
+
+    const orderAmount = itemsTotal + SHIPPING_COST;
+
+    // Insert new order
+    const insertOrderSql = `
+      INSERT INTO \`Order\` (user_id, address, order_amount, status)
+      VALUES (?, ?, ?, 'processing')
+    `;
+
+    db.query(insertOrderSql, [userId, address, orderAmount], (err, result) => {
+      if (err) {
+        console.error('Error creating order:', err);
+        return res.status(500).json({ message: 'Database error creating order' });
+      }
+
+      const orderId = result.insertId;
+
+      // Optional: clear the user's cart items after order
+      const clearCartSql = `
+        DELETE CI FROM Cart_Item CI
+        JOIN Cart C ON CI.cart_id = C.cart_id
+        WHERE C.user_id = ?
+      `;
+      db.query(clearCartSql, [userId], (err) => {
+        if (err) console.error('Error clearing cart after order:', err);
+      });
+
+      return res.json({
+        message: 'Order placed successfully',
+        order_id: orderId,
+        order_amount: orderAmount,
+        shipping_cost: SHIPPING_COST,
+        payment_method
+      });
+    });
+  });
+});
+
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
