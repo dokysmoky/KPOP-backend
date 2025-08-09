@@ -411,6 +411,37 @@ app.delete('/comments/:comment_id', authenticateToken, (req, res) => {
   });
 });
 
+app.post('/report', authenticateToken, (req, res) => {
+  const reporterUserId = req.user.id; // from token
+  const {
+    product_id,
+    comment_id = null,
+    reported_user_id,
+    report_reason = null,
+  } = req.body;
+
+  if (!reported_user_id || !product_id) {
+    return res.status(400).json({ message: 'Missing required fields.' });
+  }
+
+  const insertSql = `
+    INSERT INTO Report 
+    (user_id, reported_user_id, product_id, comment_id, report_reason, report_date)
+    VALUES (?, ?, ?, ?, ?, NOW())
+  `;
+
+  db.query(
+    insertSql,
+    [reporterUserId, reported_user_id, product_id, comment_id, report_reason],
+    (err, result) => {
+      if (err) {
+        console.error('Error inserting report:', err);
+        return res.status(500).json({ message: 'Database error.' });
+      }
+      res.json({ message: 'Report submitted successfully' });
+    }
+  );
+});
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
