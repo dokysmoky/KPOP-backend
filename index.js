@@ -107,7 +107,7 @@ app.post('/login', (req, res) => {
         const token = jwt.sign(
           { id: user.user_id, username: user.username },
           JWT_SECRET,
-          { expiresIn: '1d' }
+          { expiresIn: '90d' }
         );
 
         return res.json({ user: safeUser, token });
@@ -169,7 +169,6 @@ app.put('/profile/:id', upload.single('profile_picture'), (req, res) => {
       }
       const updatedUser = rows[0];
       delete updatedUser.password;
-      // You may also decide to omit profile_picture here or send a separate URL
       return res.json(updatedUser);
     });
   });
@@ -283,6 +282,98 @@ app.get('/wishlist/:user_id', (req, res) => {
   });
 });
 
+// Get a single listing with seller info
+app.get('/listing/:product_id', (req, res) => {
+  const productId = req.params.product_id;
+  const sql = `
+    SELECT L.*, U.username, U.user_id as seller_id
+    FROM Listing L
+    JOIN User U ON L.user_id = U.user_id
+    WHERE L.product_id = ?
+  `;
+
+  db.query(sql, [productId], (err, results) => {
+    if (err) {
+      console.error('Error fetching listing:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    if (results.length === 0) {
+      return res.status(404).json({ message: 'Listing not found' });
+    }
+    const listing = results[0];
+    if (listing.photo) {
+      listing.photo = `data:image/jpeg;base64,${Buffer.from(listing.photo).toString('base64')}`;
+    } else {
+      listing.photo = null;
+    }
+    return res.json({ listing });
+  });
+});
+
+// Get comments for a listing
+app.get('/comments/:product_id', (req, res) => {
+  const productId = req.params.product_id;
+  const sql = `
+    SELECT C.comment_id, C.comment_text, C.comment_date, U.username, U.user_id
+    FROM Comment C
+    JOIN User U ON C.user_id = U.user_id
+    WHERE C.product_id = ?
+    ORDER BY C.comment_date DESC
+  `;
+  db.query(sql, [productId], (err, results) => {
+    if (err) {
+      console.error('Error fetching comments:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    return res.json({ comments: results });
+  });
+});
+
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  console.log('Authorization header:', authHeader);
+
+  if (!authHeader) {
+    console.log('No Authorization header');
+    return res.status(401).json({ message: 'Missing Authorization header' });
+  }
+
+  const token = authHeader.split(' ')[1];
+  console.log('Token extracted:', token);
+
+  if (!token) {
+    console.log('Token missing after "Bearer"');
+    return res.status(401).json({ message: 'Missing token' });
+  }
+
+  jwt.verify(token, JWT_SECRET, (err, user) => {
+    if (err) {
+      console.log('Token verification failed:', err.message);
+      return res.status(403).json({ message: 'Invalid token' });
+    }
+    console.log('Token verified successfully:', user);
+    req.user = user;
+    next();
+  });
+}
+
+// Post a comment to a listing (authenticated)
+app.post('/comments', authenticateToken, (req, res) => {
+  const { product_id, comment_text } = req.body;
+  if (!product_id || !comment_text) {
+    return res.status(400).json({ message: 'Missing product_id or comment_text' });
+  }
+  const userId = req.user.id;
+
+  const sql = 'INSERT INTO Comment (user_id, product_id, comment_text, comment_date) VALUES (?, ?, ?, NOW())';
+  db.query(sql, [userId, product_id, comment_text], (err, result) => {
+    if (err) {
+      console.error('Error inserting comment:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    return res.status(201).json({ message: 'Comment added', comment_id: result.insertId });
+  });
+});
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
