@@ -359,20 +359,40 @@ function authenticateToken(req, res, next) {
 
 // Post a comment to a listing (authenticated)
 app.post('/comments', authenticateToken, (req, res) => {
-  const { product_id, comment_text } = req.body;
-  if (!product_id || !comment_text) {
-    return res.status(400).json({ message: 'Missing product_id or comment_text' });
-  }
-  const userId = req.user.id;
-
-  const sql = 'INSERT INTO Comment (user_id, product_id, comment_text, comment_date) VALUES (?, ?, ?, NOW())';
-  db.query(sql, [userId, product_id, comment_text], (err, result) => {
-    if (err) {
-      console.error('Error inserting comment:', err);
-      return res.status(500).json({ message: 'Database error' });
+  try {
+    const userId = req.user.id;
+    const commentText = req.body.comment_text || '';
+    
+    // Ensure comment is not empty
+    if (!commentText.trim()) {
+      return res.status(400).json({ message: 'Comment text cannot be empty.' });
     }
-    return res.status(201).json({ message: 'Comment added', comment_id: result.insertId });
-  });
+
+    // Sanitize product_id to be a pure number
+    const productId = Number(String(req.body.product_id).replace(/[^\d]/g, ''));
+
+    if (!productId) {
+      return res.status(400).json({ message: 'Invalid product_id' });
+    }
+
+    const sql = `
+      INSERT INTO Comment (user_id, product_id, comment_text, comment_date)
+      VALUES (?, ?, ?, NOW())
+    `;
+
+    db.query(sql, [userId, productId, commentText], (err, result) => {
+      if (err) {
+        console.error('Error inserting comment:', err);
+        return res.status(500).json({ message: 'Database error' });
+      }
+
+      return res.status(201).json({ message: 'Comment posted successfully' });
+    });
+
+  } catch (error) {
+    console.error('Unexpected error in /comments:', error);
+    res.status(500).json({ message: 'Unexpected server error' });
+  }
 });
 
 // Delete a comment (authenticated)
@@ -676,6 +696,59 @@ app.post('/order/checkout', authenticateToken, (req, res) => {
   });
 });
 
+app.put('/listing/:product_id', authenticateToken, async (req, res) => {
+  try {
+    const { product_id } = req.params;
+    const { listing_name, description, condition, price } = req.body;
+    const userId = req.user.id; // from authenticateToken
+
+    // Update listing that belongs to this user
+    const [result] = await db
+      .promise()
+      .query(
+        `UPDATE Listing
+         SET listing_name = ?, description = ?, \`condition\` = ?, price = ?
+         WHERE product_id = ? AND user_id = ?`,
+        [listing_name, description, condition, price, product_id, userId]
+      );
+
+    if (result.affectedRows === 0) {
+      return res
+        .status(404)
+        .json({ error: 'Listing not found or you are not the owner' });
+    }
+
+    res.json({ message: 'Listing updated successfully' });
+  } catch (err) {
+    console.error('Error updating listing:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+app.delete('/listing/:product_id', authenticateToken, async (req, res) => {
+  try {
+    const { product_id } = req.params;
+    const userId = req.user.id; // from authenticateToken
+
+    const [result] = await db
+      .promise()
+      .query(
+        `DELETE FROM Listing
+         WHERE product_id = ? AND user_id = ?`,
+        [product_id, userId]
+      );
+
+    if (result.affectedRows === 0) {
+      return res
+        .status(404)
+        .json({ error: 'Listing not found or you are not the owner' });
+    }
+
+    res.json({ message: 'Listing deleted successfully' });
+  } catch (err) {
+    console.error('Error deleting listing:', err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
