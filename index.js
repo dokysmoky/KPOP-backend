@@ -466,6 +466,143 @@ app.get('/listings/user/:user_id', (req, res) => {
   });
 });
 
+// Get cart for logged-in user
+app.get('/cart', authenticateToken, (req, res) => {
+  const userId = req.user.id;
+
+  const findCartSql = 'SELECT * FROM Cart WHERE user_id = ?';
+  db.query(findCartSql, [userId], (err, carts) => {
+    if (err) return res.status(500).json({ message: 'Database error' });
+
+    if (carts.length === 0) {
+      const createCartSql = 'INSERT INTO Cart (user_id) VALUES (?)';
+      db.query(createCartSql, [userId], (err, result) => {
+        if (err) return res.status(500).json({ message: 'Database error' });
+        return res.json({ cart_id: result.insertId, items: [] });
+      });
+    } else {
+      const cartId = carts[0].cart_id;
+      const itemsSql = `
+        SELECT CI.cart_item_id, CI.product_id, CI.quantity, L.listing_name, L.price, L.photo
+        FROM Cart_Item CI
+        JOIN Listing L ON CI.product_id = L.product_id
+        WHERE CI.cart_id = ?`;
+      db.query(itemsSql, [cartId], (err, items) => {
+        if (err) return res.status(500).json({ message: 'Database error' });
+
+        const formattedItems = items.map(item => ({
+          ...item,
+          photo: item.photo ? `data:image/jpeg;base64,${Buffer.from(item.photo).toString('base64')}` : null,
+        }));
+
+        return res.json({ cart_id: cartId, items: formattedItems });
+      });
+    }
+  });
+});
+
+// Add item to cart (authenticated)
+app.post('/cart/add', authenticateToken, (req, res) => {
+  const userId = req.user.id;
+  const { product_id, quantity = 1 } = req.body;
+
+  if (!product_id) {
+    return res.status(400).json({ message: 'Missing product_id' });
+  }
+
+  const qty = parseInt(quantity, 10);
+  if (isNaN(qty) || qty <= 0) {
+    return res.status(400).json({ message: 'Quantity must be a positive integer' });
+  }
+
+  const findCartSql = 'SELECT * FROM Cart WHERE user_id = ?';
+  db.query(findCartSql, [userId], (err, carts) => {
+    if (err) {
+      console.error('Error fetching cart:', err);
+      return res.status(500).json({ message: 'Database error fetching cart' });
+    }
+
+    function addOrUpdateCartItem(cartId) {
+      const findItemSql = 'SELECT * FROM Cart_Item WHERE cart_id = ? AND product_id = ?';
+      db.query(findItemSql, [cartId, product_id], (err, items) => {
+        if (err) {
+          console.error('Error fetching cart item:', err);
+          return res.status(500).json({ message: 'Database error fetching cart item' });
+        }
+
+        if (items.length > 0) {
+          const newQuantity = items[0].quantity + qty;
+          const updateSql = 'UPDATE Cart_Item SET quantity = ? WHERE cart_item_id = ?';
+          db.query(updateSql, [newQuantity, items[0].cart_item_id], (err) => {
+            if (err) {
+              console.error('Error updating cart item:', err);
+              return res.status(500).json({ message: 'Database error updating cart item' });
+            }
+            return res.json({ message: 'Cart updated' });
+          });
+        } else {
+          const insertSql = 'INSERT INTO Cart_Item (cart_id, product_id, quantity) VALUES (?, ?, ?)';
+          db.query(insertSql, [cartId, product_id, qty], (err) => {
+            if (err) {
+              console.error('Error inserting cart item:', err);
+              return res.status(500).json({ message: 'Database error inserting cart item' });
+            }
+            return res.status(201).json({ message: 'Item added to cart' });
+          });
+        }
+      });
+    }
+
+    if (carts.length === 0) {
+      const createCartSql = 'INSERT INTO Cart (user_id) VALUES (?)';
+      db.query(createCartSql, [userId], (err, result) => {
+        if (err) {
+          console.error('Error creating cart:', err);
+          return res.status(500).json({ message: 'Database error creating cart' });
+        }
+        addOrUpdateCartItem(result.insertId);
+      });
+    } else {
+      addOrUpdateCartItem(carts[0].cart_id);
+    }
+  });
+});
+
+// Remove item from cart (authenticated)
+app.delete('/cart/remove/:cartItemId', authenticateToken, (req, res) => {
+  const userId = req.user.id;
+  const cartItemId = req.params.cartItemId;
+
+  // First, verify that the cart item belongs to the user's cart
+  const checkCartItemSql = `
+    SELECT CI.cart_item_id
+    FROM Cart_Item CI
+    JOIN Cart C ON CI.cart_id = C.cart_id
+    WHERE CI.cart_item_id = ? AND C.user_id = ?
+  `;
+
+  db.query(checkCartItemSql, [cartItemId, userId], (err, results) => {
+    if (err) {
+      console.error('Error checking cart item ownership:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+
+    if (results.length === 0) {
+      return res.status(404).json({ message: 'Cart item not found or does not belong to user' });
+    }
+
+    // If ownership confirmed, delete the item
+    const deleteSql = 'DELETE FROM Cart_Item WHERE cart_item_id = ?';
+    db.query(deleteSql, [cartItemId], (err) => {
+      if (err) {
+        console.error('Error deleting cart item:', err);
+        return res.status(500).json({ message: 'Database error deleting cart item' });
+      }
+      return res.json({ message: 'Item removed from cart' });
+    });
+  });
+});
+
 
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
