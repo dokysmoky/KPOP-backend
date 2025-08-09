@@ -443,5 +443,29 @@ app.post('/report', authenticateToken, (req, res) => {
   );
 });
 
+// Get listings created by a specific user
+app.get('/listings/user/:user_id', (req, res) => {
+  const userId = req.params.user_id;
+  const sql = 'SELECT * FROM Listing WHERE user_id = ?';
+
+  db.query(sql, [userId], (err, results) => {
+    if (err) {
+      console.error('Error fetching user listings:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+
+    const listingsWithPhotos = results.map(listing => {
+      let photo = null;
+      if (listing.photo) {
+        photo = `data:image/jpeg;base64,${Buffer.from(listing.photo).toString('base64')}`;
+      }
+      return { ...listing, photo };
+    });
+
+    return res.json({ listings: listingsWithPhotos });
+  });
+});
+
+
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
