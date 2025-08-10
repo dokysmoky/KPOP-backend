@@ -696,6 +696,7 @@ app.post('/order/checkout', authenticateToken, (req, res) => {
   });
 });
 
+
 app.put('/listing/:product_id', authenticateToken, async (req, res) => {
   try {
     const { product_id } = req.params;
@@ -748,6 +749,25 @@ app.delete('/listing/:product_id', authenticateToken, async (req, res) => {
     console.error('Error deleting listing:', err);
     res.status(500).json({ error: 'Server error' });
   }
+});
+
+app.post('/listings', authenticateToken, upload.single('photo'), (req, res) => {
+  const { listing_name, description, condition, price } = req.body;
+  const user_id = req.user.id; // comes from JWT after authentication
+  const photo = req.file ? req.file.buffer : null;
+
+  const sql = `
+    INSERT INTO Listing (user_id, listing_name, description, \`condition\`, price, photo)
+    VALUES (?, ?, ?, ?, ?, ?)
+  `;
+
+  db.query(sql, [user_id, listing_name, description, condition, price, photo], (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ message: 'Error creating listing' });
+    }
+    res.status(201).json({ message: 'Listing created successfully', listingId: results.insertId });
+  });
 });
 
 const PORT = process.env.PORT || 4200;
