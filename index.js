@@ -770,5 +770,77 @@ app.post('/listings', authenticateToken, upload.single('photo'), (req, res) => {
   });
 });
 
+app.post('/offers', authenticateToken, (req, res) => {
+  const buyerId = req.user.id;
+  const { listing_id, seller_id, offer_price, message } = req.body;
+
+  if (!listing_id || !seller_id || !offer_price) {
+    return res.status(400).json({ message: 'Missing required fields' });
+  }
+
+  const sql = `
+    INSERT INTO Offer (listing_id, buyer_id, seller_id, offer_price, message)
+    VALUES (?, ?, ?, ?, ?)
+  `;
+
+  db.query(sql, [listing_id, buyerId, seller_id, offer_price, message || null], (err, result) => {
+    if (err) {
+      console.error('Error creating offer:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    res.status(201).json({ message: 'Offer created', offer_id: result.insertId });
+  });
+});
+
+app.get('/offers/seller/:id', authenticateToken, (req, res) => {
+  const sellerId = req.params.id;
+
+  const sql = `
+    SELECT o.offer_id, o.offer_price, o.message, o.status, o.created_at,
+           l.listing_name, u.username AS buyer_username
+    FROM Offer o
+    JOIN Listing l ON o.listing_id = l.product_id
+    JOIN User u ON o.buyer_id = u.user_id
+    WHERE o.seller_id = ?
+    ORDER BY o.created_at DESC
+  `;
+
+  db.query(sql, [sellerId], (err, results) => {
+    if (err) {
+      console.error('Error fetching offers:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    res.json({ offers: results });
+  });
+});
+
+app.put('/offers/:offerId/status', authenticateToken, (req, res) => {
+  const { status } = req.body; // 'accepted' or 'rejected'
+  const { offerId } = req.params;
+  const sellerId = req.user.id; // Only seller can accept/reject
+
+  if (!['accepted', 'rejected'].includes(status)) {
+    return res.status(400).json({ message: 'Invalid status' });
+  }
+
+  const sql = `
+    UPDATE Offer
+    SET status = ?
+    WHERE offer_id = ? AND seller_id = ?
+  `;
+
+  db.query(sql, [status, offerId, sellerId], (err, result) => {
+    if (err) {
+      console.error('Error updating offer:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: 'Offer not found or not yours' });
+    }
+    res.json({ message: `Offer ${status}` });
+  });
+});
+
+
 const PORT = process.env.PORT || 4200;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
