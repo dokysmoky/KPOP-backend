@@ -489,42 +489,59 @@ app.get('/listings/user/:user_id', (req, res) => {
 // Get cart for logged-in user
 app.get('/cart', authenticateToken, (req, res) => {
   const userId = req.user.id;
+  console.log('Fetching cart for user:', userId);
 
   const findCartSql = 'SELECT * FROM Cart WHERE user_id = ?';
   db.query(findCartSql, [userId], (err, carts) => {
-    if (err) return res.status(500).json({ message: 'Database error' });
+    if (err) {
+      console.error('Error querying cart:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
 
     if (carts.length === 0) {
+      console.log('No cart found, creating new one...');
       const createCartSql = 'INSERT INTO Cart (user_id) VALUES (?)';
       db.query(createCartSql, [userId], (err, result) => {
-        if (err) return res.status(500).json({ message: 'Database error' });
+        if (err) {
+          console.error('Error creating cart:', err);
+          return res.status(500).json({ message: 'Database error' });
+        }
         return res.json({ cart_id: result.insertId, items: [] });
       });
     } else {
       const cartId = carts[0].cart_id;
-      const itemsSql = `
-        SELECT CI.cart_item_id, CI.product_id, CI.quantity, L.listing_name, L.price, L.photo
-        FROM Cart_Item CI
-        JOIN Listing L ON CI.product_id = L.product_id
-        WHERE CI.cart_id = ?`;
-      db.query(itemsSql, [cartId], (err, items) => {
-        if (err) return res.status(500).json({ message: 'Database error' });
+     const itemsSql = `
+  SELECT CI.cart_item_id, CI.product_id, CI.quantity, CI.offer_price, L.listing_name, L.price, L.photo
+  FROM Cart_Item CI
+  JOIN Listing L ON CI.product_id = L.product_id
+  WHERE CI.cart_id = ?`;
 
-        const formattedItems = items.map(item => ({
-          ...item,
-          photo: item.photo ? `data:image/jpeg;base64,${Buffer.from(item.photo).toString('base64')}` : null,
-        }));
+db.query(itemsSql, [cartId], (err, items) => {
+  if (err) {
+    console.error('Error fetching cart items:', err);
+    return res.status(500).json({ message: 'Database error' });
+  }
 
-        return res.json({ cart_id: cartId, items: formattedItems });
-      });
+  try {
+    const formattedItems = items.map(item => ({
+      ...item,
+      price: item.offer_price !== null ? item.offer_price : item.price,  // use offer_price if exists
+      photo: item.photo ? `data:image/jpeg;base64,${Buffer.from(item.photo).toString('base64')}` : null,
+    }));
+
+    return res.json({ cart_id: cartId, items: formattedItems });
+  } catch (ex) {
+    console.error('Error formatting cart items:', ex);
+    return res.status(500).json({ message: 'Error processing cart items' });
+  }
+});
     }
   });
 });
-
 // Add item to cart (authenticated)
 app.post('/cart/add', authenticateToken, (req, res) => {
   const userId = req.user.id;
-  const { product_id, quantity = 1 } = req.body;
+  const { product_id, quantity = 1, offer_price = null } = req.body;
 
   if (!product_id) {
     return res.status(400).json({ message: 'Missing product_id' });
@@ -533,6 +550,15 @@ app.post('/cart/add', authenticateToken, (req, res) => {
   const qty = parseInt(quantity, 10);
   if (isNaN(qty) || qty <= 0) {
     return res.status(400).json({ message: 'Quantity must be a positive integer' });
+  }
+
+  // Validate offer_price if present
+  let offerPriceNum = null;
+  if (offer_price !== null && offer_price !== undefined) {
+    offerPriceNum = parseFloat(offer_price);
+    if (isNaN(offerPriceNum) || offerPriceNum < 0) {
+      return res.status(400).json({ message: 'Invalid offer_price' });
+    }
   }
 
   const findCartSql = 'SELECT * FROM Cart WHERE user_id = ?';
@@ -552,8 +578,15 @@ app.post('/cart/add', authenticateToken, (req, res) => {
 
         if (items.length > 0) {
           const newQuantity = items[0].quantity + qty;
-          const updateSql = 'UPDATE Cart_Item SET quantity = ? WHERE cart_item_id = ?';
-          db.query(updateSql, [newQuantity, items[0].cart_item_id], (err) => {
+          const updateSql = offerPriceNum !== null
+            ? 'UPDATE Cart_Item SET quantity = ?, offer_price = ? WHERE cart_item_id = ?'
+            : 'UPDATE Cart_Item SET quantity = ? WHERE cart_item_id = ?';
+
+          const params = offerPriceNum !== null
+            ? [newQuantity, offerPriceNum, items[0].cart_item_id]
+            : [newQuantity, items[0].cart_item_id];
+
+          db.query(updateSql, params, (err) => {
             if (err) {
               console.error('Error updating cart item:', err);
               return res.status(500).json({ message: 'Database error updating cart item' });
@@ -561,8 +594,8 @@ app.post('/cart/add', authenticateToken, (req, res) => {
             return res.json({ message: 'Cart updated' });
           });
         } else {
-          const insertSql = 'INSERT INTO Cart_Item (cart_id, product_id, quantity) VALUES (?, ?, ?)';
-          db.query(insertSql, [cartId, product_id, qty], (err) => {
+          const insertSql = 'INSERT INTO Cart_Item (cart_id, product_id, quantity, offer_price) VALUES (?, ?, ?, ?)';
+          db.query(insertSql, [cartId, product_id, qty, offerPriceNum], (err) => {
             if (err) {
               console.error('Error inserting cart item:', err);
               return res.status(500).json({ message: 'Database error inserting cart item' });
@@ -634,16 +667,17 @@ app.post('/order/checkout', authenticateToken, (req, res) => {
     return res.status(400).json({ message: 'Address and payment method are required' });
   }
 
-  // Fetch cart items for the user
+  // Fetch cart items + accepted offers (if any) for this user
   const getCartSql = `
-    SELECT CI.quantity, L.price
+    SELECT CI.quantity, L.price AS listing_price, O.offer_price
     FROM Cart_Item CI
     JOIN Cart C ON CI.cart_id = C.cart_id
     JOIN Listing L ON CI.product_id = L.product_id
+    LEFT JOIN Offer O ON O.listing_id = L.product_id AND O.buyer_id = ? AND O.status = 'accepted'
     WHERE C.user_id = ?
   `;
 
-  db.query(getCartSql, [userId], (err, items) => {
+  db.query(getCartSql, [userId, userId], (err, items) => {
     if (err) {
       console.error('Error fetching cart items:', err);
       return res.status(500).json({ message: 'Database error fetching cart items' });
@@ -653,10 +687,11 @@ app.post('/order/checkout', authenticateToken, (req, res) => {
       return res.status(400).json({ message: 'Cart is empty' });
     }
 
-    // Calculate total order amount (items + shipping)
+    // Calculate total order amount using offer_price if exists, else listing price
     let itemsTotal = 0;
     items.forEach(item => {
-      itemsTotal += item.price * item.quantity;
+      const priceToUse = item.offer_price !== null ? item.offer_price : item.listing_price;
+      itemsTotal += priceToUse * item.quantity;
     });
 
     const orderAmount = itemsTotal + SHIPPING_COST;
@@ -695,7 +730,6 @@ app.post('/order/checkout', authenticateToken, (req, res) => {
     });
   });
 });
-
 
 app.put('/listing/:product_id', authenticateToken, async (req, res) => {
   try {
@@ -817,19 +851,19 @@ app.get('/offers/seller/:id', authenticateToken, (req, res) => {
 app.put('/offers/:offerId/status', authenticateToken, (req, res) => {
   const { status } = req.body; // 'accepted' or 'rejected'
   const { offerId } = req.params;
-  const sellerId = req.user.id; // Only seller can accept/reject
+  const sellerId = req.user.id;
 
   if (!['accepted', 'rejected'].includes(status)) {
     return res.status(400).json({ message: 'Invalid status' });
   }
 
-  const sql = `
+  const updateOfferSql = `
     UPDATE Offer
     SET status = ?
     WHERE offer_id = ? AND seller_id = ?
   `;
 
-  db.query(sql, [status, offerId, sellerId], (err, result) => {
+  db.query(updateOfferSql, [status, offerId, sellerId], (err, result) => {
     if (err) {
       console.error('Error updating offer:', err);
       return res.status(500).json({ message: 'Database error' });
@@ -837,7 +871,51 @@ app.put('/offers/:offerId/status', authenticateToken, (req, res) => {
     if (result.affectedRows === 0) {
       return res.status(404).json({ message: 'Offer not found or not yours' });
     }
-    res.json({ message: `Offer ${status}` });
+
+    if (status === 'accepted') {
+      const updateCartOfferPriceSql = `
+        UPDATE Cart_Item CI
+        JOIN Cart C ON CI.cart_id = C.cart_id
+        JOIN Offer O ON O.listing_id = CI.product_id
+        SET CI.offer_price = O.offer_price
+        WHERE O.offer_id = ?
+          AND O.status = 'accepted'
+          AND C.user_id = O.buyer_id
+          AND CI.product_id = O.listing_id
+      `;
+
+      db.query(updateCartOfferPriceSql, [offerId], (err2) => {
+        if (err2) {
+          console.error('Error syncing offer price to cart:', err2);
+          // You may want to respond with error or success anyway
+          return res.status(500).json({ message: 'Offer accepted but failed to update cart prices' });
+        }
+        return res.json({ message: `Offer ${status} and cart updated` });
+      });
+    } else {
+      return res.json({ message: `Offer ${status}` });
+    }
+  });
+});
+
+app.get('/offers/buyer/:id', authenticateToken, (req, res) => {
+  const buyerId = req.params.id;
+
+  const sql = `
+    SELECT o.offer_id, o.offer_price, o.message, o.status, o.created_at,
+           l.listing_name, l.product_id
+    FROM Offer o
+    JOIN Listing l ON o.listing_id = l.product_id
+    WHERE o.buyer_id = ?
+    ORDER BY o.created_at DESC
+  `;
+
+  db.query(sql, [buyerId], (err, results) => {
+    if (err) {
+      console.error('Error fetching offers:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    res.json({ offers: results });
   });
 });
 
