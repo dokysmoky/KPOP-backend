@@ -6,17 +6,17 @@ const multer = require('multer');
 const upload = multer({ storage: multer.memoryStorage() });
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-
+const path = require('path');
 const JWT_SECRET = process.env.JWT_SECRET || 'your_secret_key_here'; 
 
 const app = express();
-
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // For form data (multer, etc.)
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: '127.0.0.1',
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_DATABASE,
@@ -920,5 +920,10 @@ app.get('/offers/buyer/:id', authenticateToken, (req, res) => {
 });
 
 
+// regex catch-all
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 const PORT = process.env.PORT || 4200;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0',() => console.log(`Server running on port ${PORT}`));
