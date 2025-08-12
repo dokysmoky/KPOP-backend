@@ -1,0 +1,11 @@
+nohup: ignoring input
+[dotenv@17.2.1] injecting env (4) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+Server running on port 4200
+Connected to MySQL
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTU0MTg2LCJleHAiOjE3NjI3MzAxODZ9.8Yl0hEU6w3gq0Jn0JZYAJCsly31Y8QungRtMJtORmJw
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTU0MTg2LCJleHAiOjE3NjI3MzAxODZ9.8Yl0hEU6w3gq0Jn0JZYAJCsly31Y8QungRtMJtORmJw
+Token verified successfully: { id: 3, username: 'maki', iat: 1754954186, exp: 1762730186 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTU0MTg2LCJleHAiOjE3NjI3MzAxODZ9.8Yl0hEU6w3gq0Jn0JZYAJCsly31Y8QungRtMJtORmJw
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTU0MTg2LCJleHAiOjE3NjI3MzAxODZ9.8Yl0hEU6w3gq0Jn0JZYAJCsly31Y8QungRtMJtORmJw
+Token verified successfully: { id: 3, username: 'maki', iat: 1754954186, exp: 1762730186 }
+Login request received: { username: 'maki', password: '1' }
