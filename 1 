@@ -9,3 +9,1294 @@ Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidX
 Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTU0MTg2LCJleHAiOjE3NjI3MzAxODZ9.8Yl0hEU6w3gq0Jn0JZYAJCsly31Y8QungRtMJtORmJw
 Token verified successfully: { id: 3, username: 'maki', iat: 1754954186, exp: 1762730186 }
 Login request received: { username: 'maki', password: '1' }
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+/bin/bash: line 1: 706073 Killed                  PORT=4200 NODE_ENV=production /usr/bin/node index.js
+crashed at Fri 15 Aug 2025 04:48:23 PM CEST
+[dotenv@17.2.1] injecting env (4) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+Server running on port 4200
+Connected to MySQL
+Login request received: { username: 'maki', password: '1' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjY5NDI4LCJleHAiOjE3NjMwNDU0Mjh9.jOkjDsU8UpXUR7ncg7sn6ksp6WoFMqsRNoWYXBAQiAs
+Token verified successfully: { id: 3, username: 'maki', iat: 1755269428, exp: 1763045428 }
+Login request received: { username: 'Jo', password: '4' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInVzZXJuYW1lIjoiSm8iLCJpYXQiOjE3NTUyNzI2NzksImV4cCI6MTc2MzA0ODY3OX0.qkUQsbvE9r-DP4N2yrVvIesc734fhESDMgpMCnWpbxc
+Token verified successfully: { id: 12, username: 'Jo', iat: 1755272679, exp: 1763048679 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching wishlist: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:267:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching wishlist: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:267:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching wishlist: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:267:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching wishlist: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:267:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:201:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+Error fetching wishlist: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:267:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Error fetching offers: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:913:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:356:5
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at authenticateToken (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:349:7) {
+  fatal: true
+}
+Error fetching user listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:471:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Error fetching offers: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:842:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:356:5
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at authenticateToken (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:349:7) {
+  fatal: true
+}
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Error fetching offers: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:913:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:356:5
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at authenticateToken (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:349:7) {
+  fatal: true
+}
+Error fetching user listings: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:471:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU0OTE1Mzk4LCJleHAiOjE3NjI2OTEzOTh9.fpZxcPCq5Zdk8ODFKInZlQVrUQzztEROTWJyrJIYG5U
+Token verified successfully: { id: 3, username: 'maki', iat: 1754915398, exp: 1762691398 }
+Error fetching offers: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:842:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:356:5
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:261:12
+    at getSecret (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:97:14)
+    at Object.module.exports [as verify] (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/jsonwebtoken/verify.js:101:10)
+    at authenticateToken (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:349:7) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Error fetching profile picture: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:180:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at param (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:600:14) {
+  fatal: true
+}
+Login request received: { username: 'maki', password: '1' }
+Database error during login: Error: Can't add new command when connection is in closed state
+    at Connection._addCommandClosedState (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:159:17)
+    at Connection.query (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/mysql2/lib/base/connection.js:571:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/index.js:77:6
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at next (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/route.js:117:3)
+    at handle (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/lib/layer.js:152:17)
+    at /home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:295:15
+    at processParams (/home/studenti/famnit/89201086/Documents/KPOP/kpop-backend/node_modules/router/index.js:582:12) {
+  fatal: true
+}
+/bin/bash: line 1: 3091794 Killed                  PORT=4200 NODE_ENV=production /usr/bin/node index.js
+crashed at Fri 15 Aug 2025 08:30:22 PM CEST
+[dotenv@17.2.1] injecting env (4) from .env -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+Server running on port 4200
+Connected to MySQL
+Login request received: { username: 'maki', password: '1' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgyNjM3LCJleHAiOjE3NjMwNTg2Mzd9.BUt82-N7k1hEC9g0SivI7VT5oTzJ3AWw0deUGWsbR0Y
+Token verified successfully: { id: 3, username: 'maki', iat: 1755282637, exp: 1763058637 }
+/bin/bash: line 1: 865968 Killed                  PORT=4200 NODE_ENV=production /usr/bin/node index.js
+crashed at Fri 15 Aug 2025 08:41:39 PM CEST
+[dotenv@17.2.1] injecting env (4) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+Server running on port 4200
+Connected to MySQL
+/bin/bash: line 1: 970999 Killed                  PORT=4200 NODE_ENV=production /usr/bin/node index.js
+crashed at Fri 15 Aug 2025 08:47:51 PM CEST
+[dotenv@17.2.1] injecting env (4) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Server running on port 4200
+Connected to MySQL
+Login request received: { username: 'maki', password: '1' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgzNzMzLCJleHAiOjE3NjMwNTk3MzN9.X8m7_AH5IIGtHHtshxlC_gbAOuzeLPued2d-c-v2T7o
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgzNzMzLCJleHAiOjE3NjMwNTk3MzN9.X8m7_AH5IIGtHHtshxlC_gbAOuzeLPued2d-c-v2T7o
+Token verified successfully: { id: 3, username: 'maki', iat: 1755283733, exp: 1763059733 }
+Fetching cart for user: 3
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgzNzMzLCJleHAiOjE3NjMwNTk3MzN9.X8m7_AH5IIGtHHtshxlC_gbAOuzeLPued2d-c-v2T7o
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjgzNzMzLCJleHAiOjE3NjMwNTk3MzN9.X8m7_AH5IIGtHHtshxlC_gbAOuzeLPued2d-c-v2T7o
+Token verified successfully: { id: 3, username: 'maki', iat: 1755283733, exp: 1763059733 }
+Fetching cart for user: 3
+Login request received: { username: 'kiki', password: '5' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInVzZXJuYW1lIjoia2lraSIsImlhdCI6MTc1NTI5MDM1MywiZXhwIjoxNzYzMDY2MzUzfQ.7v1-umE-LjaA87M6RYAObj0WcuA-Hw0a7uq1qyr-OOQ
+Token verified successfully: { id: 13, username: 'kiki', iat: 1755290353, exp: 1763066353 }
+Login request received: { username: 'beni', password: '7' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Fetching cart for user: 14
+Authorization header: undefined
+No Authorization header
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MDYyMCwiZXhwIjoxNzYzMDY2NjIwfQ.0aygJZEdFMJtqADEwB5ZVe2t9xiBU87sNVpdRqouEoA
+Token verified successfully: { id: 14, username: 'beni', iat: 1755290620, exp: 1763066620 }
+Login request received: { username: 'maki', password: '1' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token verified successfully: { id: 3, username: 'maki', iat: 1755291592, exp: 1763067592 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token verified successfully: { id: 3, username: 'maki', iat: 1755291592, exp: 1763067592 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token verified successfully: { id: 3, username: 'maki', iat: 1755291592, exp: 1763067592 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkxNTkyLCJleHAiOjE3NjMwNjc1OTJ9.7Q6y8JU-6xV7bjCEGFFOScs_oAi6r1gt1SU5N7JmqPo
+Token verified successfully: { id: 3, username: 'maki', iat: 1755291592, exp: 1763067592 }
+Login request received: { username: 'beni', password: '7' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Fetching cart for user: 14
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MTY4NiwiZXhwIjoxNzYzMDY3Njg2fQ.Js0Vd0_VyCoUSQa3mJSN-lEw284w1hyQ5QMLY0BC9GU
+Token verified successfully: { id: 14, username: 'beni', iat: 1755291686, exp: 1763067686 }
+Login request received: { username: 'maki', password: '1' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token verified successfully: { id: 3, username: 'maki', iat: 1755292085, exp: 1763068085 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token verified successfully: { id: 3, username: 'maki', iat: 1755292085, exp: 1763068085 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token verified successfully: { id: 3, username: 'maki', iat: 1755292085, exp: 1763068085 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJtYWtpIiwiaWF0IjoxNzU1MjkyMDg1LCJleHAiOjE3NjMwNjgwODV9._NSC6SAwnfbFdrjkTTsjOqG1vaVGu_pZ61Y_BbY-93E
+Token verified successfully: { id: 3, username: 'maki', iat: 1755292085, exp: 1763068085 }
+Login request received: { username: 'beni', password: '7' }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MjExOCwiZXhwIjoxNzYzMDY4MTE4fQ.mbDw7xlCRj_WmXHCjK76F0XiCjWRS3PSYHJsmdH0Jvo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MjExOCwiZXhwIjoxNzYzMDY4MTE4fQ.mbDw7xlCRj_WmXHCjK76F0XiCjWRS3PSYHJsmdH0Jvo
+Token verified successfully: { id: 14, username: 'beni', iat: 1755292118, exp: 1763068118 }
+Authorization header: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MjExOCwiZXhwIjoxNzYzMDY4MTE4fQ.mbDw7xlCRj_WmXHCjK76F0XiCjWRS3PSYHJsmdH0Jvo
+Token extracted: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsInVzZXJuYW1lIjoiYmVuaSIsImlhdCI6MTc1NTI5MjExOCwiZXhwIjoxNzYzMDY4MTE4fQ.mbDw7xlCRj_WmXHCjK76F0XiCjWRS3PSYHJsmdH0Jvo
+Token verified successfully: { id: 14, username: 'beni', iat: 1755292118, exp: 1763068118 }
